@@ -264,9 +264,9 @@ body {
     color: #C4C4C4;
 }
 
-.activity-card-paragraph{
-   margin: auto;
-   padding: auto;
+.activity-card-paragraph {
+    margin: auto;
+    padding: auto;
 }
 
 /* BICEPS SECTION */
@@ -328,6 +328,60 @@ body {
 .left-text-biceps button {
     margin-bottom: 5rem;
 }
+
+/* PEOPLEGROUP SECTION */
+/* PEOPLEGROUP SECTION */
+/* PEOPLEGROUP SECTION */
+
+
+.people-group-section {
+    background-color: #FFF;
+    height: 49.625rem;
+    background-image: url("../Images/Group-people-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: local;
+}
+
+.people-group-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.people-group-text-part-1 {
+    margin-top: 3rem;
+}
+
+.people-group-text-part-1 h3 {
+    color: #333;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.people-group-content p {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 25.6px;
+    width: 71.25rem;
+    max-width: 110%;
+}
+
+.text-part-1-parapgraph-tablet-mobile {
+    display: none;
+}
+
+.people-group-button {
+    align-self: center;
+}
+
+.people-group-picture-tablet-mobile {
+    display: none;
+}
+
+
 
 /* NAV HAMBURGER */
 /* NAV HAMBURGER */
@@ -517,7 +571,7 @@ body {
     .biceps-parapgraph-1 {
         width: 95%;
     }
-    
+
     .biceps-parapgraph-2 {
         width: 95%;
     }
@@ -526,18 +580,18 @@ body {
         font-size: 14px;
     }
 
-   .left-text-biceps h3 {
-    margin-top: 4rem;
-    font-size: 24px;
-    width: 85%;
-   }
+    .left-text-biceps h3 {
+        margin-top: 4rem;
+        font-size: 24px;
+        width: 85%;
+    }
 
-   .biceps-lady img {
-    height: 20rem;
-   }
+    .biceps-lady img {
+        height: 20rem;
+    }
 
-   .biceps-lady {
-    background-image: url("../Images/Elipse-muscle-mobile-lady.png");
+    .biceps-lady {
+        background-image: url("../Images/Elipse-muscle-mobile-lady.png");
         background-repeat: no-repeat;
         background-position: 100% 100%;
         background-attachment: local;
@@ -545,17 +599,66 @@ body {
         max-width: 300px;
         padding: 0;
         display: flex;
-        justify-content: center; 
-   }
+        justify-content: center;
+    }
 
-   .left-text-biceps button {
-    margin-bottom: 2rem;
-}
+    .left-text-biceps button {
+        margin-bottom: 2rem;
+    }
 
-.button-biceps-lady {
-    display: flex;
-    justify-content: center;
-}
+    .button-biceps-lady {
+        display: flex;
+        justify-content: center;
+    }
+
+    .people-group-section {
+        background-image: url("../Images/Ellipse-group-people-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right top 75px;
+        background-attachment: local;
+    }
+
+    .people-group-picture-tablet-mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .people-group-picture-tablet-mobile img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .people-group-content {
+        text-align: left;
+    }
+
+    .text-part-1-parapgraph {
+        display: none;
+    }
+
+    .text-part-1-parapgraph-tablet-mobile {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .people-group-text-part-2 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .people-group-content p {
+        max-width: 100%;  
+    }
+
+    .people-group-content h3 {
+        font-size: 24px;
+    }
+
+    .people-group-text-part-1 {
+        margin-top: 2rem;
+    }
 
 }
 
@@ -678,8 +781,8 @@ body {
         padding: 0.5rem;
     }
 
-    .card-paragraph{
-       margin-top: 3rem;
+    .card-paragraph {
+        margin-top: 3rem;
     }
 
     .activity-card-paragraph {
@@ -696,14 +799,14 @@ body {
 
     .biceps-content {
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
     }
-    
+
     .left-text-biceps {
         text-align: left;
     }
 
-    .left-text-biceps h3{
+    .left-text-biceps h3 {
         width: 70%;
         margin-top: 3.5rem;
     }
@@ -715,9 +818,9 @@ body {
 
     .biceps-parapgraph-1 {
         width: 82%;
-        
+
     }
-    
+
     .biceps-parapgraph-2 {
         width: 80%;
     }
@@ -736,18 +839,60 @@ body {
         background-attachment: local;
     }
 
-    .biceps-lady img{
+    .biceps-lady img {
         height: 30rem;
     }
 
     .biceps-section {
         background-image: url("../Images/Ellipse-biceps-right-tablet.png"),
-        url("../Images/Ellipse-biceps-left-tablet.png"),
-        url("../Images/Ellipse-biceps-middle-tablet.png");
+            url("../Images/Ellipse-biceps-left-tablet.png"),
+            url("../Images/Ellipse-biceps-middle-tablet.png");
         background-repeat: no-repeat;
         background-position: right top 20%, left 65%, 78% 63%;
         background-attachment: local;
     }
 
-   
+    .people-group-section {
+        background-image: url("../Images/Ellipse-group-people-tablet.png");
+        background-repeat: no-repeat;
+        background-position: right top 45px;
+        background-attachment: local;
+    }
+
+    .people-group-picture-tablet-mobile {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .people-group-picture-tablet-mobile img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .people-group-content {
+        text-align: left;
+    }
+
+    .text-part-1-parapgraph {
+        display: none;
+    }
+
+    .text-part-1-parapgraph-tablet-mobile {
+        display: block;
+        margin-top: 3.5rem;
+    }
+
+    .people-group-text-part-2 {
+        margin-top: 1.5rem;
+    }
+
+    .people-group-content p {
+        max-width: 100%;   
+    }
+
+    
+
+
 }

@@ -17,6 +17,5 @@ var x = setInterval(function () {
   document.getElementById("minute").innerHTML = minute + " ";
 
   document.getElementById("second").innerHTML = second + " ";
-
-
 })
+
