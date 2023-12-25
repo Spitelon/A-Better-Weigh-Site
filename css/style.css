@@ -1,19 +1,565 @@
-*, *::before, *::after {
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color: #f9f9f9;
 }
-
-img {
-    max-width: 100%;
-    
-}
-
 
 .container {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.header {
+    margin-top: 2rem;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+}
+
+.list-item {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 2rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.open-menu {
+    display: none;
+    color: #DD71C6;
+}
+
+.close-menu {
+    display: none;
+    color: #F9F9F9;
+}
+
+#check
+
+/*check id for tablet and mobile menu*/
+    {
+    display: none;
+}
+
+.hero-section {
+    background-image: url("../Images/Ellipse-clock-section-right.png"), url("../Images/Ellipse-clock-section-left.png");
+    background-repeat: no-repeat;
+    background-position: right 10px, left 10px;
+    background-attachment: local;
+}
+
+.landing {
+    margin-top: 5rem;
+}
+
+.landing-row {
+    display: flex;
+}
+
+.main-header {
+    color: #333;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.available-text {
+    color: #333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12;
+    font-weight: 400;
+}
+
+.header-paragraph p {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 40%;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #DD71C6;
+    border: none;
+    border-radius: 2rem;
+    color: #F9F9F9;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: 0.7s ease-in-out;
+}
+
+.btn:hover {
+    background: #8a3978;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.available-text {
+    display: none;
+}
+
+.pink-text {
+    color: #DD71C6;
+}
+
+.yellow-square {
+    width: 32.3vw;
+    height: 150vh;
+    flex-shrink: 0;
+    border-radius: 3.125rem 0rem 0rem 0rem;
+    background: #FFD900;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* CLOCK */
+/* CLOCK */
+/* CLOCK */
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 2.5625rem 2.25rem;
+    border-radius: 3.125rem;
+    background: linear-gradient(108deg, rgba(255, 255, 255, 0.51) 9.7%, rgba(255, 255, 255, 0.49) 88.76%);
+    backdrop-filter: blur(33.5px);
+}
+
+.timer-number {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-text {
+    color: #0083D3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.36563rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+.timer-number {
+    margin-top: 3rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.timer-content {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.offer {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* CARD SECTION */
+/* CARD SECTION */
+/* CARD SECTION */
+
+.card-section {
+    background-color: #DD71C6;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    background-image: url("../Images/Ellipse-card-right.png"),
+        url("../Images/Ellipse-card-left.png");
+    background-repeat: no-repeat;
+    background-position: right 40px, center left 120px;
+    background-attachment: local;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.card-row {
+    background-color: #FFF;
+    border-radius: 1.25rem;
+    width: 23%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content h3 {
+    color: #333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.card-content p {
+    color: #333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.btn.btn-yellow {
+    background-color: #FFD900;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.btn.btn-yellow.btn:hover {
+    background: #8a3978;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+}
+
+.grey-plus-sign {
+    color: #C4C4C4;
+}
+
+/* NAV HAMBURGER */
+/* NAV HAMBURGER */
+/* NAV HAMBURGER */
+
+@media(max-width: 1332px) {
+    .nav-list {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70%;
+        height: 100vh;
+        border-radius: 1rem 0;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #DD71C6;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .list-item {
+        margin-left: 0;
+        font-size: 24px;
+        color: #F9F9F9;
+    }
+
+    .nav-list li {
+        margin-top: 2.5rem;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.nav-list {
+        right: 0;
+    }
+
+    .open-menu {
+        display: inline;
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        display: inline;
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+}
+
+/* PHONE */
+/* PHONE */
+/* PHONE*/
+
+@media all and (max-width: 480px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .landing-row {
+        flex-direction: column;
+    }
+
+    .header-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-header {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .available-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-item {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .clock {
+        padding: 1rem 2.5rem;
+        border-radius: 30px;
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .offer {
+        font-size: 12px;
+    }
+
+    .timer-text {
+        font-size: 8px;
+        margin-top: 2rem;
+        letter-spacing: 0.1625rem;
+    }
+
+    .timer-number {
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .timer-content {
+        gap: 0.5rem;
+    }
+
+    .yellow-square {
+        width: 50vw;
+    }
+
+    .header-paragraph p {
+        max-width: 100%;
+    }
+
+    .header-paragraph button {
+        align-self: center;
+    }
+
+    .Landing {
+        margin-top: 1rem;
+    }
+
+    .hero-section {
+        background-image: url("../Images/Ellipse-clock-section-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right 60px;
+        background-attachment: local;
+    }
+
+    .card-row {
+        width: 8.375rem;
+        height: 9.8125rem;
+        padding: 0.5rem 0.5rem;
+        flex: 1 110px;
+        margin: 10px;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .card-content img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .card-section {
+        background-image: url("../Images/Ellipse-card-right-mobile.png"),
+            url("../Images/Ellipse-card-left-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right center, left bottom 170px;
+        background-attachment: local;
+        margin-top: 2rem;
+    }
+
+}
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
+
+@media all and (min-width: 481px) and (max-width: 1200px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .landing-row {
+        flex-direction: column;
+    }
+
+    .header-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .main-header {
+        font-size: 36px;
+        text-align: left;
+        max-width: 70%;
+    }
+
+    .available-text {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .list-item {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .clock {
+        padding: 1.625rem 2.25rem;
+        border-radius: 1.875rem;
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .offer {
+        font-size: 16px;
+    }
+
+    .timer-text {
+        font-size: 12px;
+        margin-top: 2rem;
+        letter-spacing: 0.24375rem;
+    }
+
+    .timer-number {
+        font-size: 36px;
+        margin-top: 2rem;
+    }
+
+    .timer-content {
+        gap: 0.5rem;
+    }
+
+    .yellow-square {
+        width: 50vw;
+        top: 6rem;
+        background-image: url("../Images/Ellipse-clock-section-right-tablet-2.png");
+        background-repeat: no-repeat;
+        background-position: center 500px;
+        background-attachment: local;
+    }
+
+    .header-paragraph p {
+        max-width: 65%;
+    }
+
+    .header-paragraph button {
+        align-self: center;
+    }
+
+    .landing {
+        margin-top: 1rem;
+    }
+
+    .hero-section {
+        background-image: url("../Images/Ellipse-clock-section-right-tablet.png"),
+            url("../Images/Ellipse-clock-section-left-tablet.png");
+        background-repeat: no-repeat;
+        background-position: right 10px, center left;
+        background-attachment: local;
+    }
+
+    .card-row {
+        line-height: 20px;
+        height: 13.4375rem;
+        width: 23%;
+        padding: 0.5rem 1rem;
+    }
+
+    .card-content img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .card-content h3 {
+        font-size: 24px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .card-section {
+        background-image: url("../Images/Ellipse-card-right-tablet.png");
+        background-repeat: no-repeat;
+        background-position: right bottom 70px;
+        background-attachment: local;
+        margin-top: 3rem;
+    }
+
 }

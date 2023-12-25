@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>A Better Weigh Site</title>
 </head>
+
 <body>
     
+    <header class="header">
+        <div class="yellow-square">
+        </div>
+        <div class="container">
+            <nav class="nav">
+                <a href="#"><img src="Images/Logo.svg" alt=""></a>
+                <input type="checkbox" id="check">
+                <ul class="nav-list">
+                    <li><a href="#" class="list-item">About Us</a></li>
+                    <li><a href="#" class="list-item">Book Online</a></li>
+                    <li><a href="#" class="list-item">Weight Loss Programs</a></li>
+                    <li><a href="#" class="list-item">Real Patient Stories</a></li>
+                    <li><a href="#" class="list-item">Locations</a></li>
+                    <li><a href="#" class="list-item">Blog</a></li>
+                    <li><a href="#" class="list-item">Shop</a></li>
+                    <li><a href="#" class="list-item">Subscription</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </ul>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="landing">
+                <div class="landing-row">
+                    <div class="header-text">
+                        <h1 class="main-header">Chicago’s <span class="pink-text">Free</span> Medical Check-Up and
+                            Weight Loss Consultation</h1>
+                        <p class="available-text">Only <span class="pink-text"> 11 </span> spots available!</p>
+                    </div>
+                    <div class="clock">
+                        <p class="offer">Your offer ends in: </p>
+                        <div class="timer-content">
+                            <div class="days">
+                                <h3 class="timer-text">Days</h3>
+                                <h1 class="timer-number" id="day">00</h1>
+                            </div>
+                            <div class="hours">
+                                <h3 class="timer-text">Hours</h3>
+                                <h1 class="timer-number" id="hour">00</h1>
+                            </div>
+                            <div class="minutes">
+                                <h3 class="timer-text">Minutes</h3>
+                                <h1 class="timer-number" id="minute">00</h1>
+                            </div>
+                            <div class="seconds">
+                                <h3 class="timer-text">Seconds</h3>
+                                <h1 class="timer-number" id="second">00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-paragraph">
+                    <p>There are limited spots due to the Physicians schedule and the
+                        high demand for service. No credit card or insurance required.</p>
+                    <button class="btn">Book my appointment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-section">
+        <div class="container">
+            <div class="cards">
+                <div class="card-row">
+                    <div class="card-content">
+                        <img src="Images/briefcase.svg" alt="">
+                        <h3>10<span class="grey-plus-sign">+</span></h3>
+                        <p>years in business</p>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card-content">
+                        <img src="Images/smile.svg" alt="">
+                        <h3>2000<span class="grey-plus-sign">+</span></h3>
+                        <p>positive reviews</p>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card-content">
+                        <img src="Images/message-circle.svg" alt="">
+                        <h3>15.000<span class="grey-plus-sign">+</span></h3>
+                        <p>satisfied clients</p>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card-content">
+                        <img src="Images/activity.svg" alt="">
+                        <h3>Many<span class="grey-plus-sign">+</span></h3>
+                        <p>nurses and physician assistants on staff</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <button class="btn btn-yellow">Book my appointment</button>
+    </section>
 
 
 
-<script src="script/script.js"></script>    
+    <script src="https://kit.fontawesome.com/d4c327f8da.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
 </body>
+
 </html>
