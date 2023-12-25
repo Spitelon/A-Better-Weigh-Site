@@ -202,7 +202,6 @@ body {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     background-image: url("../Images/Ellipse-card-right.png"),
         url("../Images/Ellipse-card-left.png");
     background-repeat: no-repeat;
@@ -228,6 +227,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .card-content h3 {
@@ -246,7 +246,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 27px;
 }
 
 .btn.btn-yellow {
@@ -262,6 +262,71 @@ body {
 
 .grey-plus-sign {
     color: #C4C4C4;
+}
+
+.activity-card-paragraph{
+   margin: auto;
+   padding: auto;
+}
+
+/* BICEPS SECTION */
+/* BICEPS SECTION */
+/* BICEPS SECTION */
+
+.biceps-section {
+    background-color: #73C3F4;
+    background-image: url("../Images/Ellipse-biceps-left-desktop.png"),
+        url("../Images/Ellipse-biceps-middle-desktop.png"),
+        url("../Images/Ellipse-biceps-right-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left center, 80% 20%, right center;
+    background-attachment: local;
+}
+
+.biceps-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.biceps-lady {
+    margin-bottom: 1rem;
+    background-image: url("../Images/Elipse-muscle-desktop-lady.png");
+    background-repeat: no-repeat;
+    background-position: 115px 200px;
+    background-attachment: local;
+    padding: 2rem;
+}
+
+.left-text-biceps {
+    color: #FFF;
+}
+
+.left-text-biceps h3 {
+    margin-top: 5rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.left-text-biceps p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.biceps-parapgraph-1 {
+    width: 65%;
+}
+
+.biceps-parapgraph-2 {
+    width: 70%;
+}
+
+.left-text-biceps button {
+    margin-bottom: 5rem;
 }
 
 /* NAV HAMBURGER */
@@ -437,6 +502,61 @@ body {
         margin-top: 2rem;
     }
 
+    .biceps-section {
+        background-image: url("../Images/Ellipse-biceps-right-mobile.png"),
+            url("../Images/Elipse-biceps-middle-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right top 5%, 90% 70%;
+        background-attachment: local;
+    }
+
+    .biceps-content {
+        flex-direction: column;
+    }
+
+    .biceps-parapgraph-1 {
+        width: 95%;
+    }
+    
+    .biceps-parapgraph-2 {
+        width: 95%;
+    }
+
+    .left-text-biceps p {
+        font-size: 14px;
+    }
+
+   .left-text-biceps h3 {
+    margin-top: 4rem;
+    font-size: 24px;
+    width: 85%;
+   }
+
+   .biceps-lady img {
+    height: 20rem;
+   }
+
+   .biceps-lady {
+    background-image: url("../Images/Elipse-muscle-mobile-lady.png");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-attachment: local;
+        width: 100%;
+        max-width: 300px;
+        padding: 0;
+        display: flex;
+        justify-content: center; 
+   }
+
+   .left-text-biceps button {
+    margin-bottom: 2rem;
+}
+
+.button-biceps-lady {
+    display: flex;
+    justify-content: center;
+}
+
 }
 
 /* TABLET */
@@ -551,7 +671,19 @@ body {
 
     .card-content p {
         font-size: 16px;
-        line-height: 18px;
+        line-height: 16px;
+    }
+
+    .card-row {
+        padding: 0.5rem;
+    }
+
+    .card-paragraph{
+       margin-top: 3rem;
+    }
+
+    .activity-card-paragraph {
+        margin: 0;
     }
 
     .card-section {
@@ -562,4 +694,60 @@ body {
         margin-top: 3rem;
     }
 
+    .biceps-content {
+        flex-direction: column;
+        justify-content: center; 
+    }
+    
+    .left-text-biceps {
+        text-align: left;
+    }
+
+    .left-text-biceps h3{
+        width: 70%;
+        margin-top: 3.5rem;
+    }
+
+    .button-biceps-lady {
+        display: flex;
+        justify-content: center;
+    }
+
+    .biceps-parapgraph-1 {
+        width: 82%;
+        
+    }
+    
+    .biceps-parapgraph-2 {
+        width: 80%;
+    }
+
+    .container.container-tablet {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .biceps-lady {
+        padding: 0.8rem;
+        height: 30rem;
+        background-image: url("../Images/Ellipse-muscle-tablet-lady.png");
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-attachment: local;
+    }
+
+    .biceps-lady img{
+        height: 30rem;
+    }
+
+    .biceps-section {
+        background-image: url("../Images/Ellipse-biceps-right-tablet.png"),
+        url("../Images/Ellipse-biceps-left-tablet.png"),
+        url("../Images/Ellipse-biceps-middle-tablet.png");
+        background-repeat: no-repeat;
+        background-position: right top 20%, left 65%, 78% 63%;
+        background-attachment: local;
+    }
+
+   
 }
