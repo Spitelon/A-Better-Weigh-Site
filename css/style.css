@@ -118,7 +118,7 @@ body {
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
 }
 
-.btn:active {
+.btn:focus {
     transform: scale(0.9);
 }
 
@@ -290,12 +290,25 @@ body {
 }
 
 .biceps-lady {
+    position: relative;
     margin-bottom: 1rem;
     background-image: url("../Images/Elipse-muscle-desktop-lady.png");
     background-repeat: no-repeat;
     background-position: 115px 200px;
     background-attachment: local;
     padding: 2rem;
+}
+
+.lower-half-circle {
+    position: absolute;
+    z-index: 1;
+    background-image: url("../Images/Ellipse-biceps-half-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 5.2rem 6.5rem;
+    height: 320px;
+    width: 500px;
+    top: 300px;
+    
 }
 
 .left-text-biceps {
@@ -377,9 +390,348 @@ body {
     align-self: center;
 }
 
+.people-group-button::before {
+    content: 'Book my appointment';
+}
+
 .people-group-picture-tablet-mobile {
     display: none;
 }
+
+/* CONSULTATION SECTION */
+/* CONSULTATION SECTION */
+/* CONSULTATION SECTION */
+
+.consultation-section {
+    background-image: url("../Images/Ellipse-consultation-right.png"),
+        url("../Images/Ellipse-consultation-right-bot-desktop.png"),
+        url("../Images/Ellipse-consultation-left-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 95% 1%, 85% 70%, left center;
+    background-attachment: local;
+    margin-top: 6rem;
+}
+
+.consultation-subheader {
+    text-align: center;
+    color: #333;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.consultation-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.consultation-card {
+    border-radius: 1.25rem;
+    background: #FFF;
+    width: 27rem;
+    height: 24rem;
+}
+
+.card-subheader {
+    text-align: center;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.consultation-list {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.6px;
+    margin-top: 3rem;
+}
+
+.consultation-list-item+.consultation-list-item {
+    margin-top: 1.5rem;
+}
+
+.consultation-card-left-line {
+    display: block;
+    border: 0.7px solid #B1E2FF;
+    width: 90%;
+    margin: auto;
+}
+
+.consultation-card-right-line {
+    display: block;
+    border: 0.7px solid #FFB7F0;
+    width: 90%;
+    margin: auto;
+}
+
+.consultation-button {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.consultation-right-card h4 {
+    color: #DD71C6;
+}
+
+.consultation-left-card h4 {
+    color: #0083D3;
+}
+
+.faq-section {
+    background-color: #FFF;
+    background-image: url("../Images/Ellipse-faq-right-desktop.png"),
+        url("../Images/Ellipse-faq-right-desktop-2.png"),
+        url("../Images/Ellipse-faq-left-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 98% 12%, 95% 90%, left 75%;
+    background-attachment: local;
+}
+
+.faq-subheader {
+    color: #333;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.faq {
+    background-color: #F9F9F9;
+    border-radius: 1.25rem;
+    margin: 30px 0;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    color: #DD71C6;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    display: block;
+    color: white;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: #DD71C6;
+}
+
+.faq-button {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+/* FOOTER */
+/* FOOTER */
+/* FOOTER */
+
+.footer-section {
+    background-image: url("../Images/Ellipse-footer-left-desktop.png"),
+        url("../Images/Ellipse-footer-right-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 10% 50%, right 80%;
+    background-attachment: local;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p,
+li {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.footer-content h3 {
+    color: #333;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer-content-right {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    max-width: 100%;
+    margin-top: 7rem;
+}
+
+.footer-content-left {
+    margin-top: 7rem;
+    width: 45%;
+}
+
+.footer-text {
+    margin-top: 2rem;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.footer-list li+li {
+    margin-top: 1.5rem;
+}
+
+.company-info {
+    margin-top: 3rem;
+}
+
+.company-info p+p {
+    margin-top: 2rem;
+}
+
+.socials-copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+    color: #DD71C6;
+    align-items: center;
+}
+
+.social-media a:hover {
+    color: #8a3978;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+}
+
+.social-media a {
+    color: inherit;
+}
+
+.fa-location-dot {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.footer-bold {
+    font-weight: 700;
+}
+
+.copyright-text {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-location,
+.footer-phone {
+    display: flex;
+}
+
+.fa-location-dot {
+    margin-right: 1rem;
+}
+
+.fa-phone {
+    margin-right: 0.7rem;
+}
+
+.footer-location-tablet-phone-text,
+.footer-phone-tablet-phone-text {
+    display: none;
+}
+
 
 
 
@@ -588,18 +940,27 @@ body {
 
     .biceps-lady img {
         height: 20rem;
+        width: 235px;
     }
 
     .biceps-lady {
         background-image: url("../Images/Elipse-muscle-mobile-lady.png");
         background-repeat: no-repeat;
-        background-position: 100% 100%;
+        background-position: 40% 100%;
         background-attachment: local;
-        width: 100%;
-        max-width: 300px;
+        width: 300px;
+        max-width: 100%;
         padding: 0;
-        display: flex;
-        justify-content: center;
+    }
+
+    .lower-half-circle {
+        background-image: url("../Images/Ellipse-biceps-half-mobile.png");
+        background-repeat: no-repeat;
+        background-position: 39.5% 90%;
+        background-attachment: local;
+        height: 230px;
+        width: 100%;
+        top: 100px;
     }
 
     .left-text-biceps button {
@@ -616,6 +977,7 @@ body {
         background-repeat: no-repeat;
         background-position: right top 75px;
         background-attachment: local;
+        height: auto;
     }
 
     .people-group-picture-tablet-mobile {
@@ -626,7 +988,7 @@ body {
 
     .people-group-picture-tablet-mobile img {
         max-width: 100%;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -649,7 +1011,7 @@ body {
     }
 
     .people-group-content p {
-        max-width: 100%;  
+        max-width: 100%;
     }
 
     .people-group-content h3 {
@@ -659,6 +1021,155 @@ body {
     .people-group-text-part-1 {
         margin-top: 2rem;
     }
+
+    .people-group-button::before {
+        content: 'See patient stories';
+    }
+
+    .consultation-section {
+        background-color: #F9F9F9;
+        background-image: url("../Images/Ellipse-consultation-right-mobile.png"),
+            url("../Images/Ellipse-consultation-left-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right top 5%, left top 5px;
+        background-attachment: local;
+    }
+
+    .consultation-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .consultation-button {
+        margin-top: 2.5rem;
+        margin-bottom: auto;
+        padding-bottom: 5rem;
+    }
+
+    .consultation-subheader {
+        font-size: 24px;
+        text-align: left;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-top: 3rem;
+        width: 80%;
+    }
+
+    .card-subheader {
+        font-size: 18px;
+    }
+
+    .consultation-list {
+        font-size: 14px;
+        margin-top: 1rem;
+        line-height: 24px;
+
+    }
+
+    .consultation-card {
+        padding: 0.5rem;
+        width: auto;
+        min-width: 17rem;
+        height: 19rem;
+    }
+
+    .consultation-list-item+.consultation-list-item {
+        margin-top: 1rem;
+    }
+
+    .faq-section {
+        background-image: url("../Images/Ellipse-faq-right-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: local;
+    }
+
+    .faq-button {
+        display: none;
+    }
+
+    .footer-section {
+        background-color: #F9F9F9;
+        background-image: url("../Images/Ellipse-footer-right-mobile.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-attachment: local;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content-left {
+        width: 100%;
+    }
+
+    .footer-content-right {
+        margin-top: 0.5rem;
+        flex-direction: column;
+    }
+
+    .footer-list {
+        margin-top: 2rem;
+    }
+
+    .social-media {
+        margin-right: 2rem;
+    }
+
+    .socials-copyright {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+
+    .footer-location-tablet-phone-text,
+    .footer-phone-tablet-phone-text {
+        display: block;
+    }
+
+    .footer-location-desktop-text,
+    .footer-phone-desktop-text {
+        display: none;
+    }
+
+    .fa-location-dot {
+        position: relative;
+        bottom: 1rem;
+        filter: none;
+    }
+
+    .footer-text {
+        width: 80%;
+    }
+
+    .footer-content-left {
+        margin-top: 4rem;
+    }
+
+    .socials-copyright {
+        margin-top: 2.5rem;
+        flex-direction: column;
+    }
+
+    .company-info {
+        margin-top: 1rem;
+    }
+
+    .footer-content p,
+li {
+   font-size: 14px;
+}
+
+.footer-content h3 {
+    font-size: 20px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    width: 90%;
+}
+
 
 }
 
@@ -807,7 +1318,7 @@ body {
     }
 
     .left-text-biceps h3 {
-        width: 70%;
+        width: 100%;
         margin-top: 3.5rem;
     }
 
@@ -817,26 +1328,36 @@ body {
     }
 
     .biceps-parapgraph-1 {
-        width: 82%;
+        width: 100%;
 
     }
 
     .biceps-parapgraph-2 {
-        width: 80%;
+        width: 100%;
     }
 
     .container.container-tablet {
-        width: 60%;
-        max-width: 600px;
+        width: 80%;
+        max-width: 440px;
     }
 
     .biceps-lady {
-        padding: 0.8rem;
+        padding: 0;
         height: 30rem;
         background-image: url("../Images/Ellipse-muscle-tablet-lady.png");
         background-repeat: no-repeat;
-        background-position: 100% 100%;
-        background-attachment: local;
+        background-position: 3.5rem 8.5rem;
+        background-attachment:local;
+        width: 100%;
+    }
+
+    .lower-half-circle {
+        background-image: url("../Images/Ellipse-biceps-half-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 3.5rem 12.5rem;
+        height: 380px;
+        width: 430px;
+        top: 100px;
     }
 
     .biceps-lady img {
@@ -857,6 +1378,7 @@ body {
         background-repeat: no-repeat;
         background-position: right top 45px;
         background-attachment: local;
+        height: auto;
     }
 
     .people-group-picture-tablet-mobile {
@@ -889,10 +1411,145 @@ body {
     }
 
     .people-group-content p {
-        max-width: 100%;   
+        max-width: 100%;
     }
 
-    
+    .people-group-button::before {
+        content: 'See patient stories';
+    }
+
+    .consultation-cards {
+        flex-direction: column;
+    }
+
+    .consultation-section {
+        background-color: #F9F9F9;
+        background-image: url("../Images/Ellipse-consultation-right-tablet.png"),
+            url("../Images/Ellipse-consultation-left-tablet.png"),
+            url("../Images/Ellipse-consultation-left-tablet-2.png");
+        background-repeat: no-repeat;
+        background-position: right center, left 10%, left bottom 5%;
+        background-attachment: local;
+    }
+
+    .consultation-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .consultation-button {
+        margin-top: 2.5rem;
+        margin-bottom: auto;
+        padding-bottom: 5rem;
+    }
+
+    .consultation-subheader {
+        font-size: 24px;
+        text-align: left;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding-top: 3rem;
+        width: 70%;
+    }
+
+    .consultation-list {
+        font-size: 14px;
+        margin-top: 2rem;
+        line-height: 24px;
+
+    }
+
+    .consultation-card {
+        padding: 1rem 5rem;
+        width: 27.5;
+        height: 23rem;
+    }
+
+    .consultation-list-item+.consultation-list-item {
+        margin-top: 1rem;
+    }
+
+    .faq-subheader {
+        padding-top: 1rem;
+    }
+
+    .faq-section {
+        background-image: none;
+    }
+
+    .footer-section {
+        background-color: #F9F9F9;
+        background-image: url("../Images/Ellipse-footer-center-tablet.png"),
+            url("../Images/Ellipse-footer-right-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 30% 18%, right 10px bottom 10px;
+        background-attachment: local;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content-left {
+        width: 100%;
+    }
+
+    .footer-content-right {
+        margin-top: 2rem;
+    }
+
+    .social-media {
+        margin-right: 2rem;
+    }
+
+    .socials-copyright {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+
+    .footer-location-tablet-phone-text,
+    .footer-phone-tablet-phone-text {
+        display: block;
+    }
+
+    .footer-location-desktop-text,
+    .footer-phone-desktop-text {
+        display: none;
+    }
+
+    .fa-location-dot {
+        position: relative;
+        bottom: 1rem;
+        filter: none;
+    }
+
+    .footer-text {
+        width: 80%;
+    }
+
+    .footer-content-left {
+        margin-top: 4rem;
+    }
+
+    .socials-copyright {
+        margin-top: 2.5rem;
+    }
+
+    .footer-text {
+        width: 70%;
+    }
+
+    .footer-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-list {
+        margin-top: 2rem;
+    }
+
+
+
 
 
 }

@@ -19,3 +19,11 @@ var x = setInterval(function () {
   document.getElementById("second").innerHTML = second + " ";
 })
 
+//faq-section
+const toggles = document.querySelectorAll('.faq-toggle')
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+})
